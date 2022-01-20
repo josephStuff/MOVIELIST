@@ -1,0 +1,24 @@
+
+
+/*  adds numbers to an ordered list */
+
+.blue-background-class {
+    background-color: lightblue;
+}
+
+ol {
+    list-style: none;
+    counter-reset: my-counter;
+}
+
+ol li {
+    counter-increment: my-counter;
+}
+
+ol li::before {
+    content: counter(my-counter) ". ";
+    color: red;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
